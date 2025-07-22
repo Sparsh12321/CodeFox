@@ -1,66 +1,70 @@
-# LeetCode Learning Assistant 🚀
+# CodeFox 🦊
 
-![LeetCode Assistant Icon](/screenshots/banner.png)  
-_A Chrome extension to supercharge your LeetCode problem-solving with AI-powered guidance._
+![CodeFox 🦊 Icon](/screenshots/banner.png)  
+_From Clueless to Code-Master – One Hint at a Time._
 
 ---
+
+
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Browser Support](#browser-support)
-- [Prerequisites](#prerequisites)
-- [Screenshots](#screenshots)
-- [How It Works](#how-it-works)
-- [Installation](#installation)
-  - [API Key Setup](#api-key-setup)
-  - [Using in LeetCode](#using-in-leetcode)
-- [File Structure](#file-structure)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
+- [Project Highlights](#project-highlights)
+- [Key Features](#key-features)
+- [Platform Compatibility](#platform-compatibility)
+- [Requirements](#requirements)
+- [Visual Tour](#screenshots)
+- [How CodeFox Operates](#how-it-works)
+- [Step-by-Step Installation](#installation)
+- [Directory Layout](#file-structure)
+- [Technology Stack](#technologies-used)
+- [Ways to Contribute](#contributing)
 
 ---
-## Project Overview
 
-The **LeetCode Learning Assistant** is a Chrome extension designed to enhance your LeetCode problem-solving experience. It integrates directly into LeetCode problem pages, providing a sleek, sliding panel with **AI-powered** guidance using the **Gemini 2.5 Flash** API. <br>
-From high-level hints to complete Java solutions and complexity analysis, this tool supports coders at all levels with a structured, step-by-step learning path. Its modern UI, robust error handling, and secure API key management make it a must-have for mastering coding challenges.
+## Project Highlights
 
----
-## Features
-
-- **Seamless Integration :** Adds an "Analyze Problem" button on LeetCode problem pages.
-
-- **Structured Guidance :**
-    - **Hints :** 3-4 concise, numbered hints to spark logical thinking without revealing solutions.
-    - **Algorithmic Approach :** Outlines the optimal data structure and algorithm with numbered steps.
-    -  **Pseudocode :** Language-agnostic pseudocode in numbered steps for clarity.
-    -  **Solution :** Complete, well-commented Java code with a flow explanation.
-    -  **Complexity Analysis :** Time and space complexity with concise reasoning.
-      
-- **Modern UI :** Responsive sliding panel with custom scrollbar and syntax-highlighted code.
-
-- **Secure API Key Storage :** Save your Gemini API key via the extension popup.
-  
-- **Robust Error Handling :** Clear error messages and retry logic for API failures.
-  
-- **Formatted Responses :** Markdown-formatted output with proper code blocks for readability.
+**CodeFox** is a powerful, browser-based assistant crafted to supercharge your LeetCode problem-solving adventures. Seamlessly woven into LeetCode’s web interface, CodeFox offers tailored, AI-augmented support every time you land on a problem page. From strategic hints and adaptive pseudocode to annotated solutions and performance breakdowns, CodeFox helps you transition from learning to mastery, one challenge at a time. With a polished interface, end-to-end error handling, and secure API key integration, CodeFox stands apart as a robust, privacy-conscious tool for developers and learners alike.
 
 ---
-## Browser Support
 
-The extension is fully tested and supported on:
-- **Google Chrome**
-- **Microsoft Edge**
+## Key Features
 
-It also work on other Chromium-based browsers (e.g., **Brave**, **Opera**), but official support to Chrome and Edge.
+- **Native LeetCode Augmentation:** Instantly attaches a “Get CodeFox Hints” button to your problem workspace for minimal disruption and maximum assistance.
+
+- **Adaptive Guidance Flow:**
+  - **Hint Cascade:** Multiple clue levels tailored to push your thinking, not spoil solutions.
+  - **Strategic Blueprint:** Breakdowns of recommended data structures and stepwise approaches.
+  - **Universal Pseudocode:** Intuitive, language-independent steps accessible to all proficiency levels.
+  - **Solution Reveal:** Peer over the AI’s shoulder—see a thoroughly commented Java solution, demystified.
+  - **Performance Insights:** Crisp, reasoned breakdowns of time/space complexity to fine-tune your learning.
+
+- **Intuitive Modern UI:** Elegant slide-in panel, custom themes, and high-clarity code highlighting for distraction-free focus.
+
+- **Private API Key Management:** Your Gemini API key remains encrypted—easy to set, never exposed.
+
+- **Comprehensive Error Handling:** Friendly error reports and retry options help you stay on track, even when the network isn’t.
+
+- **Rich Formatting:** Get everything in clean, Markdown-styled blocks—easier to study, share, and reference.
 
 ---
-## Prerequisites
 
-Before installing, ensure you have:
-- **Google Chrome** or **Microsoft Edge** (latest version recommended).
-- A valid **Gemini API key** from [Google AI Studio](https://aistudio.google.com/).
+## Platform Compatibility
 
+- **Guaranteed:** Google Chrome, Microsoft Edge
+- **Also Works:** Chromium-based browsers such as Brave and Opera (not officially tested)
+- **Optimized For:** Desktop experience
+
+---
+
+## Requirements
+
+Before you install, ensure you have:
+
+- The latest version of **Google Chrome** or **Microsoft Edge**
+- An active **Gemini API key** (obtainable from Google AI Studio)
+- No browser restrictions blocking local extensions
+
+---
 ---
 ## Screenshots
 
@@ -81,7 +85,7 @@ Before installing, ensure you have:
 4. Verify the confirmation message (green for success, red for errors).
 
 - ### Using in LeetCode
-1. Navigate to a LeetCode problem page (e.g., `https://leetcode.com/problems/two-sum/`).
+1. Navigate to a LeetCode problem page (e.g., `https://leetcode.com/problems/score-after-flipping-matrix`).
 2. Click the **"Analyze Problem"** button to open the sliding assistant panel.
 3. Use the **"Reveal"** buttons to access:
    - **Hints :** 3-4 short hints to guide your thinking.
@@ -98,7 +102,7 @@ Follow these steps to set up the extension:
 
 1. Clone or Download the Repository:
    ```bash
-   git clone https://github.com/saksham2882/LeetCode-Learning-Assistant.git
+   git clone https://github.com/Sparsh12321/CodeFox.git
    ```
    Or download and extract the ZIP file.
 
@@ -110,14 +114,14 @@ Follow these steps to set up the extension:
    - Toggle "Developer mode" (top-right) to ON.
 
 4. Load Unpacked Extension:
-   - Click "Load unpacked" and select the `leetcode-learning-assistant` folder.
+   - Click "Load unpacked" and select the `CodeFox` folder.
 
 5. Set API Key:
    - Click the extension icon in the browser toolbar.
    - Enter your Gemini API key in the popup and click "Save Key".
 
 6. Verify Setup:
-   - Visit a LeetCode problem page (e.g., `https://leetcode.com/problems/two-sum/`).
+   - Visit a LeetCode problem page (e.g., `https://leetcode.com/problems/score-after-flipping-matrix`).
    - Confirm the "Analyze Problem" button appears.
 
 ---
@@ -154,7 +158,7 @@ We welcome contributions to enhance the LeetCode Learning Assistant! To contribu
 
 1. Fork the Repository:
    ```bash
-   git fork https://github.com/saksham2882/LeetCode-Learning-Assistant.git
+   git fork https://github.com/Sparsh12321/CodeFox.git
    ```
 2. Create a Feature Branch:
    ```bash
