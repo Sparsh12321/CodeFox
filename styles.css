@@ -1,0 +1,247 @@
+/* ----------- Analyze Button ----------- */
+#analyze-btn {
+    background: linear-gradient(135deg, #ffd26f, #fcb69f);
+    color: #1a1a1a;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+#analyze-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(252, 182, 159, 0.6);
+}
+
+/* ----------- Panel ----------- */
+#panel {
+    position: fixed;
+    top: 50px;
+    right: -550px;
+    width: 480px;
+    height: calc(100vh - 75px);
+    background: rgba(255, 255, 255, 0.12);
+    border-left: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    backdrop-filter: blur(18px);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    transition: right 0.4s ease;
+    color: #ffffff;
+}
+
+#panel.visible {
+    right: 0;
+}
+
+/* ----------- Header ----------- */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 22px;
+    background: rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-top-left-radius: 20px;
+}
+
+#header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.4px;
+}
+
+#close-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+#close-btn:hover {
+    color: #fff;
+}
+
+/* ----------- Main Content ----------- */
+#main-content {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/* Custom Scrollbar */
+#main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+#main-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+#main-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* ----------- Container ----------- */
+.container {
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container h4 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: #ffef9f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ----------- Buttons ----------- */
+.btn, .btn-retry {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.btn {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(109, 213, 237, 0.3);
+}
+
+.btn-retry {
+    margin-top: 10px;
+    background: linear-gradient(to right, #ff6a6a, #ff9966);
+    color: white;
+}
+
+.btn-retry:hover {
+    box-shadow: 0 4px 8px rgba(255, 106, 106, 0.3);
+    transform: translateY(-1px);
+}
+
+.btn.loading {
+    background: rgba(255,255,255,0.2);
+    cursor: wait;
+}
+
+/* ----------- Content Box ----------- */
+.content-box {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    white-space: pre-wrap;
+    line-height: 1.7;
+    font-size: 14px;
+    color: #e8e8e8;
+}
+
+.content-box pre {
+    background-color: rgba(255,255,255,0.05);
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.content-box code {
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    color: #ffe083;
+}
+
+/* ----------- Footer ----------- */
+#footer {
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.05);
+    border-bottom-left-radius: 20px;
+}
+
+/* ----------- Error Messages ----------- */
+.error-message {
+    color: #fff;
+    background-color: #ff4c4c;
+    border: 1px solid #ffbaba;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* ----------- Text Layout ----------- */
+.content-box p {
+    margin-bottom: 6px;
+}
+
+.content-box h1,
+.content-box h2,
+.content-box h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.content-box ul,
+.content-box ol {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.content-box pre {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* ----------- Grid Layouts ----------- */
+.bubble-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.bubble-cell {
+    background-color: #1a1d26;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #303642;
+    transition: background 0.3s;
+}
+
+.bubble-cell.full-width {
+    grid-column: span 2;
+}
