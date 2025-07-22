@@ -66,10 +66,10 @@ Before installing, ensure you have:
 
 | Image | Description |
 |-------|-------------|
-| ![Extension Popup](/screenshots/popup-btn.PNG) | Shows the extension icon and API key settings popup. |
-| ![Analyze Button](/screenshots/analyze-btn.PNG) | Displays the "Analyze Problem" button on a LeetCode problem page. |
-| ![Assistant Panel](/screenshots/panel.png) | Shows the main sliding panel of the LeetCode Learning Assistant. |
-| ![Generated Content](/screenshots/hint.png) | Displays AI-generated content (e.g., hints or code) in the panel. |
+| ![Extension Popup](/screenshots/gemini.png) | Shows the extension icon and API key settings popup. |
+| ![Analyze Button](/screenshots/analyzebtn.png) | Displays the "Analyze Problem" button on a LeetCode problem page. |
+| ![Assistant Panel](/screenshots/hints.png) | Shows the main sliding panel of the LeetCode Learning Assistant. |
+| ![Generated Content](/screenshots/code.png) | Displays AI-generated content (e.g., hints or code) in the panel. |
 
 ---
 ## How It Works
