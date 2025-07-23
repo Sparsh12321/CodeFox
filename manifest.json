@@ -4,8 +4,7 @@
     "version": "1.0.0",
     "description": "Uses AI to analyze LeetCode problems and provide guided hints, pseudo-code, and solutions.",
     "permissions": [
-        "storage",
-        "activeTab"
+        "storage"
     ],
     "host_permissions": [
         "https://leetcode.com/problems/*"
